@@ -54,6 +54,13 @@ public class HelloApplication extends Application {
             stackPane.getChildren().addAll(triangle, triangle1);
         }
 
+        Rectangle rectangle = new Rectangle();
+        rectangle.setHeight(30);
+        rectangle.setWidth(30);
+        rectangle.setFill(Color.YELLOW);
+        rectangle.setStroke(Color.BLACK);
+        stackPane.getChildren().add(rectangle);
+
         Scene scene = new Scene(stackPane, 200, 200);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Superposición de Triángulos");
